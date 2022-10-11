@@ -1,3 +1,3 @@
 # ToDoList-Demo
 
-<img src="/ToDoList.png" />
+<img src="ToDoList.png" />
