@@ -1,0 +1,23 @@
+
+<template>
+    <div class="toDo">
+       
+        <div class="header">
+            <h2 class="title">My To Do List</h2>
+            <input 
+                type="text"  
+                placeholder="Type Here..."
+                onchange={handleToDoChanges}>
+            <span  class="addBtn"  value={details} onclick={handleToDo}>Add</span>
+        </div>
+       
+         <ul>
+            <template for:each={todos} for:item="todo">
+                <li key={todo.id}>
+                    {todo.details}
+                </li>
+            </template>
+        </ul>     
+    </div>
+   
+</template>
